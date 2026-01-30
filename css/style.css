@@ -694,20 +694,33 @@ header {
 
 }
 
+
+/* ★★★オリジナル★★★↑↑↑↑↑↑↑↑★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+
 .map-img {
   width: 70%;
   max-width: 300px;
   height: auto;
 }
 
-/* 画像並び */
+
+/* ★スタッフ画像用　画像並び★ */
+
 .staff-images {
   display: flex;
   gap: 16px;
+  padding-left: 10px; /* ← 左に少し余白 */
 }
+
 .staff-images img {
   width: 140px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .staff-images img {
+    width: 200px;
+  }
 }
 
 /* モーダル背景 */
@@ -892,3 +905,41 @@ header {
   100% { transform: translateX(-50%); }
 }
 
+
+
+/* ★スケジュール画像用★ */
+
+.schedule-img img {
+  max-width: 90%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .schedule-img img {
+    max-width: 400px; /* ← PCではここで抑える */
+  }
+}
+
+/* ★施設のご案内ページ用ボックス２★ */
+/*各ボックスの設定*/
+#main .list2 {
+	position: relative;
+	overflow: hidden;
+	margin: 0 2.5% 15px;	/*上、左右、下へのボックスの外に空けるスペース*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+	padding: 3%;			/*ボックス内の余白*/
+	background: #FFF;		/*背景色（古いブラウザ用）*/
+	background: linear-gradient(#FFF, #f1f1f1);			/*背景色グラデーション*/
+	border-radius: 10px;	/*角丸のサイズ*/
+}
+/*ボックス内のh4タグ設定*/
+#main .list2 h4 {
+	font-size: 15px;	/*文字サイズ*/
+	border-bottom: 4px dotted #ff9999;	/*下側の線の幅、線種、色*/
+	margin-bottom: 10px;
+	color: #ff9999;		/*文字色*/
+}
+/*ボックス内の段落タグ設定*/
+#main .list2 p {
+	padding: 0px;
+}
