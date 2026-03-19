@@ -815,7 +815,7 @@ header {
   left: 0;
   width: 100%;
   opacity: 0;
-  animation: fadeInOut 30s infinite;
+  animation: fadeInOut 33s infinite;
 }
 
 /* クローンは非表示 */
@@ -823,7 +823,7 @@ header {
   display: none;
 }
 
-/* delay設定（10枚） */
+/* delay設定（12枚） */
 .slider-container.fade .slideimg:nth-child(1)  { position: relative; animation-delay: 0s; }
 .slider-container.fade .slideimg:nth-child(2)  { animation-delay: 3s; }
 .slider-container.fade .slideimg:nth-child(3)  { animation-delay: 6s; }
@@ -834,52 +834,9 @@ header {
 .slider-container.fade .slideimg:nth-child(8)  { animation-delay: 21s; }
 .slider-container.fade .slideimg:nth-child(9)  { animation-delay: 24s; }
 .slider-container.fade .slideimg:nth-child(10) { animation-delay: 27s; }
+.slider-container.fade .slideimg:nth-child(11) { animation-delay: 30s; }
+.slider-container.fade .slideimg:nth-child(12) { animation-delay: 33s; }
 
-
-
-/* ★★★ホーム４用★★★↓↓↓↓↓↓↓↓★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
-
-/* 各スライド画像のスタイル */
-.slider-container2.fade .slider-track {
-  position: relative;
-  height: 100%;
-}
-
-.slider-container2.fade .slideimg {
-  position: absolute;
-  inset: 0;              /* top:0 left:0 right:0 bottom:0 */
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  animation: fadeInOut 30s infinite;
-}
-
-.slider-container2.fade .slideimg img {
-  width: 100%;           /* ← ここで大きく見せる */
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* クローンは非表示 */
-.slider-container2.fade .clone {
-  display: none;
-}
-
-/* delay設定（10枚） */
-.slider-container2.fade .slideimg:nth-child(1)  { position: relative; animation-delay: 0s; }
-.slider-container2.fade .slideimg:nth-child(2)  { animation-delay: 3s; }
-.slider-container2.fade .slideimg:nth-child(3)  { animation-delay: 6s; }
-.slider-container2.fade .slideimg:nth-child(4)  { animation-delay: 9s; }
-.slider-container2.fade .slideimg:nth-child(5)  { animation-delay: 12s; }
-.slider-container2.fade .slideimg:nth-child(6)  { animation-delay: 15s; }
-.slider-container2.fade .slideimg:nth-child(7)  { animation-delay: 18s; }
-.slider-container2.fade .slideimg:nth-child(8)  { animation-delay: 21s; }
-.slider-container2.fade .slideimg:nth-child(9)  { animation-delay: 24s; }
-.slider-container2.fade .slideimg:nth-child(10) { animation-delay: 27s; }
-
-
-/* ★★★ホーム４用★★★↑↑↑↑↑↑↑↑★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
 
 @keyframes fadeInOut {
   0%   { opacity: 0; }
